@@ -1,0 +1,16 @@
+.ui-listview .ui-li-thumb{
+    max-height: 80px; 
+    max-width: 1200px;
+}
+.ui-li-has-thumb h3 {
+    padding-left: 60px;
+}
+
+.ui-listview .ui-li-icon{
+    max-height: 40px;
+    max-width: 60px;
+}
+.ui-li-has-icon h3 {
+    padding-left: 35px;
+}
+
