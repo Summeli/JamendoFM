@@ -20,10 +20,6 @@ function refreshRadioListData() {
      });
 }
 
-$( document ).delegate("#radioListPage", "pageinit", function() {
-   refreshRadioListData();
-});
-
 $( document ).delegate("#radioListPage", "pagebeforeshow", function()  {
    if(radioListPageLoaded == true)
       return;
