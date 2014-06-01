@@ -83,6 +83,13 @@
 
   
     <gap:plugin name="org.apache.cordova.media" />
+     
+     <!---Android configs for audio -->
+    <gap:config-file platform="android" parent="/manifest">
+        <uses-permission android:name="android.permission.RECORD_AUDIO" />
+        <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    </gap:config-file>
     <!--
         Define access to external domains.
 
