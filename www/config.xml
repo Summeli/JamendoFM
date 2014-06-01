@@ -22,7 +22,11 @@
         The "device" permission is required for the 'deviceready' event.
     -->
     <feature name="http://api.phonegap.com/1.0/device" />
-
+    
+    <!---Android configs for audio -->
+    <feature name="Media">
+       <param name="android-package" value="org.apache.cordova.AudioHandler" />
+    </feature>
     <!--
         If you do not want any permissions to be added to your app, add the
         following tag to your config.xml; you will still have the INTERNET
@@ -83,8 +87,6 @@
 
   
     <gap:plugin name="org.apache.cordova.media"/>
-         
-     <!---Android configs for audio -->
    
     <!--
         Define access to external domains.
