@@ -23,8 +23,6 @@
     -->
     <feature name="http://api.phonegap.com/1.0/device" />
     
-    <!---Android configs for audio -->
-    <feature name="http://api.phonegap.com/1.0/media" />
     <!--
         If you do not want any permissions to be added to your app, add the
         following tag to your config.xml; you will still have the INTERNET
@@ -32,6 +30,11 @@
     -->
     <preference name="permissions"                value="none"/>
 
+    <!---Android configs for audio -->
+    <feature name="http://api.phonegap.com/1.0/media" />
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    
+    
     <!-- Customize your app and platform with the preference element. -->
     <preference name="phonegap-version"           value="3.3.0" />          <!-- all: current version of PhoneGap -->
     <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
