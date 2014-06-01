@@ -28,7 +28,7 @@
         following tag to your config.xml; you will still have the INTERNET
         permission on your app, which PhoneGap requires.
     -->
-    <preference name="permissions"                value="none"/>
+    <!-- <preference name="permissions"                value="none"/> -->
 
     <!---Android configs for audio -->
     <feature name="http://api.phonegap.com/1.0/media" />
