@@ -1,6 +1,6 @@
 
 var g_radioCallback;
-var g_myaudio
+var g_myaudio;
 function setRadioStream(sourceUrl) {
     try {
     g_myaudio = new Audio(sourceUrl);
