@@ -31,9 +31,7 @@
    <preference name="permissions"                value="none"/> 
 
     <!---Android configs for audio -->
-    <feature name="Media">
-       <param name="android-package" value="org.apache.cordova.AudioHandler" />
-    </feature>
+    <feature name="http://api.phonegap.com/1.0/media"/>
     <feature name="http://api.phonegap.com/1.0/network"/>
     <feature name="http://api.phonegap.com/1.0/device" />
     
@@ -94,6 +92,7 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
    </gap:config-file>
 
     <!--
