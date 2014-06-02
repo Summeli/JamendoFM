@@ -1,12 +1,20 @@
 
 var g_radioCallback;
-
+var g_myaudio
 function setRadioStream(sourceUrl) {
+    try {
+    g_myaudio = new Audio(sourceUrl);
+    g_myaudio.id = 'playerMyAdio';
+    g_myaudio.play();
+   } catch (e) {
+    alert('no audio support!');
+  } 
+    /*
     var audio = $("#radiocontrols");
     $("#radiosource").attr("src", sourceUrl);
     audio[0].pause();
     audio[0].load();
-    audio[0].play();
+    audio[0].play();*/
 };
 
 function refreshPlayerData() {
@@ -49,8 +57,9 @@ $( document ).delegate("#radioPage", "pagebeforeshow", function()  {
 });
 
 $( document ).delegate("#radioPage", "pagebeforehide", function()  {
-   console.log("pausing the audio");
+   g_myaudio.pause();
+   /*
    var audio = $("#radiocontrols");
    audio[0].pause();
-   window.clearInterval(g_radioCallback);
+   window.clearInterval(g_radioCallback);*/
 });
